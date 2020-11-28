@@ -20,7 +20,7 @@ function PlayerManager:can_carry(carry_id)
 end
 
 function PlayerManager:drop_carry(...)
-    if BetterBags:is_enabled() then
+    if BetterBags:is_enabled() and BetterBags:can_drop() then
         _drop_carry(self, ...)
         BetterBags:pop()
         local carry_data = BetterBags:peek()
