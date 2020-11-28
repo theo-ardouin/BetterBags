@@ -1,0 +1,39 @@
+{
+    "menu_id": "bbags_id",
+    "parent_menu_id": "blt_options",
+    "title": "bbags_title",
+    "description": "bbags_description",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "bbags_offline_only",
+            "title": "bbags_offline_only_title",
+            "description": "bbags_offline_only_description",
+            "callback": "bbags_offline_only_callback",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "bbags_stealth_only",
+            "title": "bbags_stealth_only_title",
+            "description": "bbags_stealth_only_description",
+            "callback": "bbags_stealth_only_callback",
+            "default_value": false
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "slider",
+            "id": "bbags_max_weight",
+            "title": "bbags_max_weight_title",
+            "description": "bbags_max_weight_description",
+            "callback": "bbags_max_weight_callback",
+            "default_value": 1,
+            "min": 0,
+            "max": 10,
+            "step": 1
+        }
+    ]
+}

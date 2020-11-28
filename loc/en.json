@@ -1,0 +1,11 @@
+{
+    "bbags_title": "Better Bags",
+    "bbags_description": "Better Bags options",
+
+    "bbags_offline_only_title": "Offline only",
+    "bbags_offline_only_description": "Allows only in offline mode",
+    "bbags_stealth_only_title": "Stealth only",
+    "bbags_stealth_only_description": "Allows only while in stealth",
+    "bbags_max_weight_title": "Maximum weight",
+    "bbags_max_weight_description": "Define the maximum weight the player can carry"
+}
