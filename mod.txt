@@ -36,5 +36,5 @@
             "hook_id" : "lib/units/interactions/interactionext",
             "script_path" : "lua/interaction.lua"
         }
-	]
+    ]
 }

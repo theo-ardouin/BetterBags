@@ -4,22 +4,22 @@ local _register_carry = PlayerManager.register_carry
 
 
 function PlayerManager:verify_carry(...)
-	if BetterBags:is_enabled() then
-		return true
+    if BetterBags:is_enabled() then
+        return true
     end
     return _verify_carry(self, ...)
 end
 
 function PlayerManager:verify_equipment(...)
-	if BetterBags:is_enabled() then
+    if BetterBags:is_enabled() then
         return true
-	end
+    end
     return _verify_equipment(self, ...)
 end
 
 function PlayerManager:register_carry(...)
     if BetterBags:is_enabled() then
         return true
-	end
+    end
     return _register_carry(self, ...)
 end

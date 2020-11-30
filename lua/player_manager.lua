@@ -5,18 +5,18 @@ local _set_carry = PlayerManager.set_carry
 
 local function update_hud(inventory)
     managers.hud:remove_special_equipment("_bags")
-	if #inventory > 1 then
-		managers.hud:add_special_equipment(
+    if #inventory > 1 then
+        managers.hud:add_special_equipment(
             {id = "_bags", icon = "pd2_loot", amount = #inventory}
         )
     end
 end
 
 function PlayerManager:can_carry(carry_id)
-	if BetterBags:is_enabled() then
-		return BetterBags:can_carry(carry_id)
-	end
-	return _can_carry(self, carry_id)
+    if BetterBags:is_enabled() then
+        return BetterBags:can_carry(carry_id)
+    end
+    return _can_carry(self, carry_id)
 end
 
 function PlayerManager:drop_carry(...)
